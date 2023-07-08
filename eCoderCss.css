@@ -1,0 +1,169 @@
+/* Initial css */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(237, 237, 237);
+}
+
+/* navbar css */
+#navbar {
+    position:fixed;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    width:100%;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    font-family: 'Mukta', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+#navbar ul li a:hover {
+    color: rgb(178, 178, 178);
+}
+
+#navbar ul li a:active {
+    color: rgb(178, 178, 178);
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#logo span {
+    position: relative;
+    bottom: 10px;
+    font-size: 1.6rem;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+}
+
+.navBtn {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(1, 117, 152);
+    color: white;
+    border: none;
+    font-family: 'Mukta', sans-serif;
+}
+
+.navBtn:hover {
+    background-color: rgb(0, 92, 120);
+}
+
+#bodyHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:500px;
+}
+
+
+#bodyHome::before{
+    content:"";
+    position:absolute;
+    background: url(eCoderBodyimg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:500px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#bodyHome h1{
+    font-family: 'Fjalla One', sans-serif;
+    padding:10px;
+    margin-top:85px;
+    font-size:5rem;
+}
+
+#bodyHome p{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+#bodyHomebtn{
+    width: 200px;
+    margin-top:50px;
+    height:50px;
+    border-radius: 25px;
+    background-color: rgb(1, 117, 152);
+    color:white;
+    font-size:1.3rem;
+    border:none;
+    font-family: 'Fjalla One', sans-serif;
+    padding:10px;
+}
+
+#bodyHomebtn:hover{
+    background-color: rgb(0, 92, 120);
+}
+
+
+#services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:auto;
+    width:60%;
+    background-color: white;
+}
+
+.box{
+    background-color: white;
+    width:30%;
+    height:450px;
+    margin:30px;
+    text-align: center;
+    padding:10px;
+}
+
+.box h1{
+    font-family: 'Assistant', sans-serif;
+    font-size:2.5rem;
+}
+
+.box p{
+    font-family: 'Assistant', sans-serif;
+    font-size:1.3rem;
+}
+
+#box-4 img{
+    width:200px;
+    height:250px;
+}

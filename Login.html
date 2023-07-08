@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page | eCoder</title>
+    <link rel="stylesheet" href="LoginCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Assistant:wght@300&family=Belanosima&family=Fjalla+One&family=Marhey:wght@600&family=Mukta:wght@300&family=Oswald:wght@500&family=Pacifico&family=Roboto:wght@300&family=Ysabeau+Infant:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <form action="#">
+        <h1>Welcome</h1>
+        <img src="eLogo.png" alt="logo">
+
+        <input type="email" name="" id="myMail" class="inputBox" placeholder="Email">
+        <input type="password" name="" id="myPasswd" class="inputBox" placeholder="password">
+
+        <span>Show password</span>
+        <input type="checkbox" name="" id="chkBox" onclick="togglePasswd()">
+
+        <input type="submit" value="Login" id="LoginBtn">
+
+        <p>Don't have an account? <a href="signup.html" target="_blank">Sign up</a></p>
+
+    </form>
+
+    <script>
+
+        function togglePasswd(){
+            let password = document.getElementById('myPasswd');
+
+            if (password.type == 'password') {
+                password.type = 'text';
+            }
+            else {
+                password.type = 'password';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to eCoder | The best coding blog website</title>
+    <link rel="stylesheet" href="eCoderCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Assistant:wght@300&family=Fjalla+One&family=Marhey:wght@600&family=Mukta:wght@300&family=Oswald:wght@500&family=Pacifico&family=Roboto:wght@300&family=Ysabeau+Infant:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:2450px)" href="codingBlogPhone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="eLogo.png" alt="eCoder">
+            <span>Coder</span>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+        <div id="right">
+            <button class="navBtn" id="loginBtn" onclick="openLogin()">Login</button>
+            <button class="navBtn" id="signInBtn" onclick="openSignup()">Sign up</button>
+        </div>
+    </nav>
+
+    <div id="bodyHome">
+        <h1>Welcome to eCoder</h1>
+        <p>The best coding blog on the internet</p>
+        <p>Learn about languages,technologies and more</p>
+
+        <button id="bodyHomebtn">Start learning!</button>
+    </div>
+
+    <div id="services">
+        <div class="box" id="box-1">
+            <img src="https://assets.sololearn.com/home-why-solo-1.svg" alt="">
+            <h1>Tailored to you</h1>
+            <p>No matter your experience level, you'll be writing real, functional code within minutes of starting your
+                first course.</p>
+        </div>
+        <div class="box" id="box-2">
+            <img src="	https://assets.sololearn.com/home-why-solo-2.svg" alt="">
+            <h1>Bite-sized</h1>
+            <p>Go step-by-step through our unique courses. Assess what you’ve learned with in-lesson quizzes, and
+                gradually advance your skills with practice.</p>
+        </div>
+        <div class="box" id="box-3">
+            <img src="https://assets.sololearn.com/home-why-solo-3.svg" alt="">
+            <h1>Get proof</h1>
+            <p>Earn a certificate to validate your newly acquired skills. Post it on social for others to see.</p>
+        </div>
+        <div class="box" id="box-4">
+            <img src="	https://blob.sololearn.com/assets/home-whu-solo-4-rebranding.svg" alt="">
+            <h1>Learning on the go</h1>
+            <p>Learn on the web or on the go. Sololearn is always ready for you and you'll never lose your place.</p>
+        </div>
+        <div class="box" id="box-5">
+            <img src="	https://assets.sololearn.com/home-why-solo-5.svg" alt="">
+            <h1>More than 20 courses</h1>
+            <p>From Python, through data, to web dev. We got everything you need.</p>
+        </div>
+    </div>
+
+    <script>
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function openLogin() {
+            window.open('Login.html');
+        }
+
+        function openSignup() {
+            window.open('signup.html');
+        }
+    </script>
+
+</body>
+</html>

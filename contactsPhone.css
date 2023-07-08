@@ -1,0 +1,28 @@
+
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size:1.2rem;
+}
+
+#contactUsimg{
+    height:400px;
+}
+
+#contactUsimg::before{
+    height:400px;
+}
+
+#contactUsimg h1{
+    position:relative;
+    top:60px;
+    font-size:3rem;
+    z-index: -1;
+}
+
+#contactForm h1{
+    font-size:1.5rem;
+}

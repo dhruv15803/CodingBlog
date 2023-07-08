@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | eCoder</title>
+    <link rel="stylesheet" href="signupCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Assistant:wght@300&family=Belanosima&family=Fjalla+One&family=Marhey:wght@600&family=Mukta:wght@300&family=Oswald:wght@500&family=Pacifico&family=Roboto:wght@300&family=Ysabeau+Infant:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <form action="#">
+        <h1>Welcome</h1>
+        <img src="eLogo.png" alt="logo">
+
+        <input type="text" name="" id="myUsername" placeholder="username" class="inputBox">
+        <input type="email" name="" id="myMail" class="inputBox" placeholder="Email">
+        <input type="password" name="" id="myPasswd" class="inputBox" placeholder="password">
+        <input type="password" name="" id="myconfirmPasswd" class="inputBox" placeholder="confirm password">
+
+        <span>Show password</span>
+        <input type="checkbox" name="" id="chkBox" onclick="togglePasswd()">
+
+        <input type="submit" value="Sign up" id="signupBtn">
+
+
+    </form>
+
+    <script>
+
+        function togglePasswd() {
+            let password = document.getElementById('myPasswd');
+            let confirmPasswd = document.getElementById('myconfirmPasswd');
+            if (password.type == 'password' || confirmPasswd.type == 'password') {
+                password.type = 'text';
+                confirmPasswd.type = 'text';
+            }
+            else {
+                password.type = 'password';
+                confirmPasswd.type = 'password';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
